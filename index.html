@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="device-with, initial-scale= 1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>alexjorge | portfolio</title>
+</head>
+<body>
+
+	<div class="particulas"></div>
+
+
+
+<nav class="navegacao"> 
+<ul class="menu">
+	<li>
+		
+		<a href="#inicio" class="menu-link">Inicio</a>
+
+	</li>
+	<li>
+		
+		<a href="#Sobre" class="menu-link">Sobre</a>
+		
+	</li>
+	<li>
+		
+		<a href="#Projetos" class="menu-link">Projetos</a>
+		
+	</li>
+	<li>
+		
+	   <a href="#Contatos" class="menu-link">Contatos</a>
+		
+	</li>
+</ul>
+
+</nav>
+
+<main id="inicio" class="cabecalho">
+	
+	<img src="./img/file_00000000c76471fdb28178964cc96666.png" alt="porto de Alex Jorge" class="foto-perfil">
+	<h1>Alex Jorge</h1>
+	<p class="paragrafo23">Profissional de Design e Tecnologia</p>
+	
+	
+</main>
+
+<section id="Sobre" class="Sobre">
+	<h2 class="sobre-titulo"> Sobre Mim</h2>
+	<div class="sobre-caixa">
+		
+		<p class="sobre-paragrafo">
+			olá! sou um Profissioal de Design e Tecnologia, apaixonado por criar soluções tecnologicas webs e não só , combino codigo limpo com design moderno para desenvolver , sites e outros projectos, que impressionam visualmente.
+			além disso sou dono de uma empresa virtual chamada "Magno" que vem me auxiliando na troca de experiência com profissionais na area e ganhar valências com experiências em projectos.
+		</p>
+	</div>
+
+</section >
+
+<section id="Projetos" class="projetos">
+	
+ <h2 class="Projetos-titulo"> OS Meus Projetos</h2>
+ <div class="Projetos-caixa">
+ 	<div class="Projetos-card">
+ 		<img src="./img/Captura de Tela (143).png" alt="Projeto1" class="projetoimagem">
+ 		<div class="caixa-textos-projeto">
+ 		<h3 class="info-projetos"> Sistema de gestão de uma clinica portfólio </h3>
+ 		</div>
+ 		<p class="paragrafo-projetos">Um sistema focado em facilitar pequenas , instituições hospitalares, com design moderno suave , atendendo a demanda. Funciona offline. </p>
+ 		
+
+ 	</div>
+
+ 	<div class="Projetos-card">
+ 		<img src="./img/Captura de Tela (144).png" alt="Projeto1" class="projeto-imagem">
+ 		<div class="caixa-textos-projeto">
+ 		<h3 class="info-projetos"> Sistema de gestão de uma escola </h3>
+ 	    </div>
+ 		<p class="paragrafo-projetos">Um sistema focado em facilitar pequenas , instituições escolares , offline permitir dinamizar o trabalho de forma eficaz, projecto em andamento...</p>
+ 		
+
+ 	</div>
+ 	<div class="Projetos-card">
+ 		<img src="./img/Blue Black Bold Gradient Shoes Promotion Poster_20251110_100217_0000.jpg" alt="Projeto1" class="projeto-imagem">
+ 		<div class="caixa-textos-projeto">
+ 		<h3 class="info-projetos"> Abertura e compra de cartão visa</h3>
+ 	    </div>
+ 		<p class="paragrafo-projetos">fizemos a aberturas de contas visas , na carteira Redotpay com um cartão eletronico e bonús de 5 dólares, para usar como quiser, além de comprarmos dolares para si uma taixa minima</p>
+ 		
+
+ 	</div>
+
+ 	<div class="Projetos-card">
+ 		<img src="./img/Yellow and Blue Simple Digital Marketing Agency Flyer_20250908_180339_0000.png" alt="Projeto1" class="projeto-imagem">
+ 		<div class="caixa-textos-projeto">
+ 		<h3 class="info-projetos"> Serviço de Design Gráfico Profissional </h3>
+ 		</div>
+ 		<p class="paragrafo-projetos">flyer virtual moderno suave , com informações que uma dada empresa realiza.</p>
+ 		
+
+ 	</div>
+
+
+
+ </div>
+</section>
+
+<section id="contatos" class="Contatos">
+	<h2 class="contatos-titulos">Entre em Contato</h2>
+	<form class="formulario-contato" id="formulario" onsubmit="Enviarwhats(event)">
+		<div class="grupo-form">
+            <input placeholder="Nome" class="campo-form" id="nome">
+        </div>
+
+        <div class="grupo-form">
+        	<textarea class="campo-form" placeholder="Digite a sua Mensagem" rows="6" id="mensagem"></textarea>
+        </div>
+        <button type="submit" class="botao-form">Enviar Whatsapp</button>
+
+	</form>
+	</div>
+	
+
+</section>
+  <script >
+
+
+  	function enviarwhats (event){
+  		event.preventDefault()
+
+  	const nome = document.getElementById('nome').value;
+  	const mensagem = document.getElementById('mensagem').value;
+  	const telefone = '244952081372'
+
+  	const texto =`ola! Me chamo ${nome},${mensagem}`
+  	const msgformatada= encodeURIComponent(texto)
+  	const url =`https://wa.me/${telefone}?text=${msgformatada}`
+  	console.log (url) 
+  	window.open {url,'_blank'}
+
+  	}
+  	
+  </script>
+
+</body>
+</html>
